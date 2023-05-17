@@ -20,7 +20,9 @@ const Theme3 = () => {
 		chnageHaderColor("color_10");
 		changePrimaryColor("color_10");
 		changeSideBarStyle({ value: "compact", label: "Compact" });
-	}, []);
+	}, [chnageHaderColor,
+		changePrimaryColor,
+		changeSideBarStyle]);
 	
 	return(
 		<>

@@ -20,7 +20,9 @@ const Theme6 = () => {
 		changeNavigationHader("color_10");
 		changePrimaryColor("color_10");
 		changeSideBarStyle({ value: "modern", label: "Modern" });
-	}, []);
+	}, [changeNavigationHader,
+		changePrimaryColor,
+		changeSideBarStyle]);
 	
 	return(
 		<>

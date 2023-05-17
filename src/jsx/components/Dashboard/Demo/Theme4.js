@@ -20,7 +20,9 @@ const Theme4 = () => {
 		chnageSidebarColor("color_15");
 		changePrimaryColor("color_15");
 		changeSideBarLayout({ value: "horizontal", label: "Horizontal" });
-	}, []);
+	}, [chnageSidebarColor,
+		changePrimaryColor,
+		changeSideBarLayout]);
 	
 	return(
 		<>

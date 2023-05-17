@@ -21,7 +21,10 @@ const Home = () => {
 		changeNavigationHader("color_3");
 		chnageSidebarColor("color_3");
 		changePrimaryColor("color_3");
-	}, []);
+	}, [changeBackground,
+		changeNavigationHader,
+		chnageSidebarColor,
+		changePrimaryColor]);
 	
 	return(
 		<>

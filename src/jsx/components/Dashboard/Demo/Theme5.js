@@ -24,7 +24,11 @@ const Theme5 = () => {
 		changePrimaryColor("color_9");
 		changeSideBarLayout({ value: "horizontal", label: "Horizontal" });
 		changeSideBarStyle({ value: "modern", label: "Modern" });
-	}, []);
+	}, [changeNavigationHader,
+		chnageHaderColor,
+		changePrimaryColor,
+		changeSideBarLayout,
+		changeSideBarStyle]);
 	
 	return(
 		<>

@@ -22,7 +22,10 @@ const Home = () => {
 		chnageSidebarColor("color_2");
 		changePrimaryColor("color_2");
 		changeSideBarStyle({ value: "mini", label: "Mini" });
-	}, []);
+	}, [changeNavigationHader,
+		chnageSidebarColor,
+		changePrimaryColor,
+		changeSideBarStyle]);
 	
 	return(
 		<>

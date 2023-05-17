@@ -50,11 +50,6 @@ const AppProfile = () => {
 	const onInit = () => {
 		//console.log('lightGallery has been initialized');
 	};
-  	const options = {
-     	settings: {
-			overlayColor: "#000000",
-     	},
- 	};
 	const [state, dispatch] = useReducer(reducer, initialState);
 	return (
 		<Fragment>
@@ -202,33 +197,6 @@ const AppProfile = () => {
 									</div>
 									))}
 								</LightGallery>	
-									 {/* <SRLWrapper options={options}> 
-										<div className="row sp4">
-											<div className="col-lg-4 col-xl-4 col-sm-4 col-6 int-col mb-1">
-												<a href={profile02}> <img src={profile02} alt="profileImage" className="img-fluid" /> </a>
-											</div>
-											<div className="col-lg-4 col-xl-4 col-sm-4 col-6 int-col mb-1">
-												<a href={profile03}> <img src={profile03} alt="profile" className="img-fluid"/></a>
-											</div>
-											<div className="col-lg-4 col-xl-4 col-sm-4 col-6 int-col mb-1">
-												<a href={profile04}><img src={profile04} alt="profile" className="img-fluid" /> </a>
-											</div>
-											<div className="col-lg-4 col-xl-4 col-sm-4 col-6 int-col mb-1">
-												{" "}
-												<a href={profile02}><img src={profile02} alt="profile" className="img-fluid" /> </a>
-											</div>
-											<div className="col-lg-4 col-xl-4 col-sm-4 col-6 int-col mb-1">
-												<a href={profile03} className="col-lg-4 col-xl-4 col-sm-4 col-6 int-col" >
-													<img src={profile03} alt="profile"	className="img-fluid"/>	
-												</a>
-											</div>
-											<div className="col-lg-4 col-xl-4 col-sm-4 col-6 int-col mb-1">
-												<a href={profile04}	className="col-lg-4 col-xl-4 col-sm-4 col-6 int-col">
-													<img  src={profile04} alt="profile"	className="img-fluid"/>
-												</a>
-											</div>
-										</div>
-									 </SRLWrapper> */}
 								</div>
 							</div>	
 						</div>
