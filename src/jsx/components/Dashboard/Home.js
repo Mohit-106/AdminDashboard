@@ -13,7 +13,7 @@ const Home = () => {
 	const { changeBackground } = useContext(ThemeContext);
 	useEffect(() => {
 		changeBackground({ value: "light", label: "Light" });
-	}, []);
+	}, [changeBackground]);
 	
 	return(
 		<>
