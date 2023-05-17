@@ -3,6 +3,9 @@
   "homepage": "https://travl.dexignzone.com/react/demo",
   "version": "0.1.0",
   "private": true,
+  "engines": {
+    "node" : "16.13.1"
+  },
   "dependencies": {
     "@ckeditor/ckeditor5-build-classic": "^37.1.0",
     "@ckeditor/ckeditor5-react": "^6.0.0",
