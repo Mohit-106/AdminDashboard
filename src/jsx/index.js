@@ -1,18 +1,19 @@
 import React, { useContext } from "react";
 
-/// React router dom
+///React router dom
 import {  Routes, Route, Outlet  } from "react-router-dom";
 
-/// Css
+///Css
 import "./index.css";
 import "./chart.css";
 import "./step.css";
 
-/// Layout
+///Layout
 import Nav from "./layouts/nav";
 import Footer from "./layouts/Footer";
 import ScrollToTop from "./layouts/ScrollToTop";
-/// Dashboard
+
+///Dashboard
 import Home from "./components/Dashboard/Home";
 import DashboardDark from "./components/Dashboard/DashboardDark";
 import GuestList from "./components/Dashboard/GuestList";
@@ -22,7 +23,7 @@ import RoomList from "./components/Dashboard/RoomList";
 import Reviews from "./components/Dashboard/Reviews";
 import Task from "./components/Dashboard/Task";
 
-/////Demo
+///Demo
 import Theme1 from "./components/Dashboard/Demo/Theme1";
 import Theme2 from "./components/Dashboard/Demo/Theme2";
 import Theme3 from "./components/Dashboard/Demo/Theme3";
@@ -30,8 +31,7 @@ import Theme4 from "./components/Dashboard/Demo/Theme4";
 import Theme5 from "./components/Dashboard/Demo/Theme5";
 import Theme6 from "./components/Dashboard/Demo/Theme6";
 
-
-/// App
+///App
 import AppProfile from "./components/AppsMenu/AppProfile/AppProfile";
 import Compose from "./components/AppsMenu/Email/Compose/Compose";
 import Inbox from "./components/AppsMenu/Email/Inbox/Inbox";
@@ -39,7 +39,7 @@ import Read from "./components/AppsMenu/Email/Read/Read";
 import Calendar from "./components/AppsMenu/Calendar/Calendar";
 import PostDetails from "./components/AppsMenu/AppProfile/PostDetails";
 
-/// Product List
+///Product List
 import ProductGrid from "./components/AppsMenu/Shop/ProductGrid/ProductGrid";
 import ProductList from "./components/AppsMenu/Shop/ProductList/ProductList";
 import ProductDetail from "./components/AppsMenu/Shop/ProductGrid/ProductDetail";
@@ -48,14 +48,14 @@ import Invoice from "./components/AppsMenu/Shop/Invoice/Invoice";
 import ProductOrder from "./components/AppsMenu/Shop/ProductOrder";
 import Customers from "./components/AppsMenu/Shop/Customers/Customers";
 
-/// Charts
+///Charts
 import SparklineChart from "./components/charts/Sparkline";
 import ChartJs from "./components/charts/Chartjs";
 //import Chartist from "./components/charts/chartist";
 import RechartJs from "./components/charts/rechart";
 import ApexChart from "./components/charts/apexcharts";
 
-/// Bootstrap
+///Bootstrap
 import UiAlert from "./components/bootstrap/Alert";
 import UiAccordion from "./components/bootstrap/Accordion";
 import UiBadge from "./components/bootstrap/Badge";
@@ -73,7 +73,7 @@ import UiPagination from "./components/bootstrap/Pagination";
 import UiGrid from "./components/bootstrap/Grid";
 import UiTypography from "./components/bootstrap/Typography";
 
-/// Plugins
+///Plugins
 import Select2 from "./components/PluginsMenu/Select2/Select2";
 //import Nestable from "./components/PluginsMenu/Nestable/Nestable";
 //import MainNouiSlider from "./components/PluginsMenu/NouiSlider/MainNouiSlider";
@@ -85,23 +85,23 @@ import Lightgallery from "./components/PluginsMenu/Lightgallery/Lightgallery";
 //Redux
 import Todo from "./pages/Todo";
 
-/// Widget
+///Widget
 import Widget from "./pages/Widget";
 
-/// Table
+///Table
 import SortingTable from "./components/table/SortingTable/SortingTable";
 import FilteringTable from "./components/table/FilteringTable/FilteringTable";
 import DataTable from "./components/table/DataTable";
 import BootstrapTable from "./components/table/BootstrapTable";
 
-/// Form
+///Form
 import Element from "./components/Forms/Element/Element";
 import Wizard from "./components/Forms/Wizard/Wizard";
 import CkEditor from "./components/Forms/CkEditor/CkEditor";
 import Pickers from "./components/Forms/Pickers/Pickers";
 import FormValidation from "./components/Forms/FormValidation/FormValidation";
 
-/// Pages
+///Pages
 import LockScreen from "./pages/LockScreen";
 import Error400 from "./pages/Error400";
 import Error403 from "./pages/Error403";
@@ -114,7 +114,7 @@ import { ThemeContext } from "../context/ThemeContext";
 const Markup = () => {
   // const { menuToggle } = useContext(ThemeContext);
   const allroutes = [
-    /// Dashboard
+    ///Dashboard
     { url: "", component: <Home/> },
     { url: "dashboard", component: <Home/> },
     { url: "dashboard-dark", component: <DashboardDark/> },
@@ -123,17 +123,17 @@ const Markup = () => {
     { url: "concierge-list", component: <ConciergeList/> },
     { url: "room-list", component: <RoomList/> },
     { url: "reviews", component: <Reviews/> },
-    { url: "task", component: <Task/> },
+    { url: "task", component: <Task/>},
 	
-	///Demo
-    { url: "primary-sidebar", component: <Theme1/> },
+    ///Demo
+    { url: "primary-/", component: <Theme1/> },
     { url: "mini-primary-sidebar", component: <Theme2/> },
     { url: "compact-primary-header", component: <Theme3/> },
     { url: "horizontal-primary-sidebar", component: <Theme4/> },
     { url: "horizontal-modern-sidebar", component: <Theme5/> },
     { url: "modern-sidebar", component: <Theme6/> },
 	
-	/// Apps
+	  ///Apps
     { url: "app-profile", component: <AppProfile/> },
     { url: "post-details", component: <PostDetails/> },
     { url: "email-compose", component: <Compose/> },
@@ -141,14 +141,14 @@ const Markup = () => {
     { url: "email-read", component: <Read/> },
     { url: "app-calender", component: <Calendar/> },
 
-    /// Chart
+    ///Chart
     { url: "chart-sparkline", component: <SparklineChart/> },
     { url: "chart-chartjs", component: <ChartJs/> },
-    //{ url: "chart-chartist", component: Chartist },
+    //{url: "chart-chartist", component: Chartist },
     { url: "chart-apexchart", component: <ApexChart/> },
     { url: "chart-rechart", component: <RechartJs/> },
 
-    /// Bootstrap
+    ///Bootstrap
     { url: "ui-alert", component: <UiAlert/> },
     { url: "ui-badge", component: <UiBadge/> },
     { url: "ui-button", component: <UiButton/> },
@@ -166,24 +166,24 @@ const Markup = () => {
     { url: "ui-typography", component: <UiTypography/> },
     { url: "ui-grid", component: <UiGrid/> },
 	
-    /// Plugin
+    ///Plugin
     { url: "uc-select2", component: <Select2 /> },
-    //{ url: "uc-nestable", component: Nestable },
-    //{ url: "uc-noui-slider", component: MainNouiSlider },
+    //{url: "uc-nestable", component: Nestable },
+    //{url: "uc-noui-slider", component: MainNouiSlider },
     { url: "uc-sweetalert", component: <MainSweetAlert/> },
     { url: "uc-toastr", component: <Toastr/> },
     { url: "map-jqvmap", component: <JqvMap/> },
     { url: "uc-lightgallery", component: <Lightgallery/> },
 
-	///Redux
-	{ url: "todo", component: <Todo/> },
-	//{ url: "redux-form", component: ReduxForm },
-  //{ url: "redux-wizard", component: WizardForm },
+	//Redux
+	//{url:"todo",component: <Todo/> },
+	//{url:"redux-form",component: ReduxForm },
+  //{url:"redux-wizard",component: WizardForm },
 	
-    /// Widget
-    { url: "widget-basic", component: <Widget/> },
+    //Widget
+    { url:"widget-basic",component:<Widget/>},
 
-    /// Shop
+    //Shop
     { url: "ecom-product-grid", component: <ProductGrid/> },
     { url: "ecom-product-list", component: <ProductList/> },
     { url: "ecom-product-detail", component: <ProductDetail/> },
@@ -192,29 +192,30 @@ const Markup = () => {
     { url: "ecom-invoice", component: <Invoice/> },
     { url: "ecom-customers", component: <Customers/> },
 
-    /// Form
+    ///Form
     { url: "form-element", component: <Element/> },
     { url: "form-wizard", component: <Wizard/> },
     { url: "form-ckeditor", component: <CkEditor/> },
     { url: "form-pickers", component: <Pickers/> },
     { url: "form-validation", component: <FormValidation/> },
 
-    /// table
+    ///Table
 	  { url: 'table-filtering', component: <FilteringTable/> },
     { url: 'table-sorting', component: <SortingTable/> },
     { url: "table-datatable-basic", component: <DataTable/> },
     { url: "table-bootstrap-basic", component: <BootstrapTable/> },
 
-    /// pages
-    //{ url: "page-register", component: Registration },
-    //{ url: "page-lock-screen", component: LockScreen },
-    //{ url: "page-login", component: Login },
-    //{ url: "page-forgot-password", component: ForgotPassword },
-    // { url: "page-error-400", component: Error400 },
-    // { url: "page-error-403", component: Error403 },
-    // { url: "page-error-404", component: Error404 },
-    // { url: "page-error-500", component: Error500 },
-    // { url: "page-error-503", component: Error503 },
+    //Pages
+    //{ url:"page-register",component: Registration },
+    //{ url:"page-lock-screen",component: LockScreen },
+    //{ url:"page-login",component: Login },
+    //{ url:"page-forgot-password",component: ForgotPassword },
+    //{ url:"page-error-400",component:Error400 },
+    //{ url:"page-error-403",component:Error403 },
+    //{ url:"page-error-404",component:Error404 },
+    //{ url:"page-error-500",component:Error500 },
+    //{ url:"page-error-503",component:Error503 },
+
   ];
   let path = window.location.pathname;
   path = path.split("/");
