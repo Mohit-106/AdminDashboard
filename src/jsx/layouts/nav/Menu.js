@@ -22,7 +22,7 @@ export const MenuList = [
                 to: 'guest-details',                
             },
             {
-                title: 'Concierge List',
+                title: 'Help & Support',
                 to: 'concierge-list',                
             },
             {
@@ -54,14 +54,7 @@ export const MenuList = [
                 title: 'Profile',
                 to: 'app-profile'
             },
-            // {
-            //     title: 'Edit Profile',
-            //     to: 'edit-profile'
-            // },
-            {
-                title: 'Post Details',
-                to: 'post-details'
-            },
+        
             {
                 title: 'Email',
                 //to: './',
@@ -86,38 +79,26 @@ export const MenuList = [
                 to: 'app-calender'
             },
             {
-                title: 'Shop',
+                title: 'Partner',
                 //to: './',
                 hasMenu : true,
                 content: [
                     {
-                        title: 'Product Grid',
-                        to: 'ecom-product-grid',
+                        title: 'Users',
+                        to: 'ecom-customers',
                     },
                     {
-                        title: 'Product List',
+                        title: 'Posts',
                         to: 'ecom-product-list',
                     },
                     {
-                        title: 'Product Details',
+                        title: 'Post Details',
                         to: 'ecom-product-detail',
                     },
                     {
-                        title: 'Order',
+                        title: 'Requests',
                         to: 'ecom-product-order',
-                    },
-                    {
-                        title: 'Checkout',
-                        to: 'ecom-checkout',
-                    },
-                    {
-                        title: 'Invoice',
-                        to: 'ecom-invoice',
-                    },
-                    {
-                        title: 'Customers',
-                        to: 'ecom-customers',
-                    },
+                    }
                 ],
             },
         ],
