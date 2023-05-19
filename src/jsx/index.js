@@ -83,18 +83,6 @@ import Todo from "./pages/Todo";
 ///Widget
 import Widget from "./pages/Widget";
 
-///Table
-import SortingTable from "./components/table/SortingTable/SortingTable";
-import FilteringTable from "./components/table/FilteringTable/FilteringTable";
-import DataTable from "./components/table/DataTable";
-import BootstrapTable from "./components/table/BootstrapTable";
-
-///Form
-import Element from "./components/Forms/Element/Element";
-import Wizard from "./components/Forms/Wizard/Wizard";
-import CkEditor from "./components/Forms/CkEditor/CkEditor";
-import Pickers from "./components/Forms/Pickers/Pickers";
-import FormValidation from "./components/Forms/FormValidation/FormValidation";
 
 ///Pages
 import LockScreen from "./pages/LockScreen";
@@ -177,18 +165,6 @@ const Markup = () => {
     { url: "ecom-product-order", component: <ProductOrder/> },
     { url: "ecom-customers", component: <Customers/> },
 
-    ///Form
-    { url: "form-element", component: <Element/> },
-    { url: "form-wizard", component: <Wizard/> },
-    { url: "form-ckeditor", component: <CkEditor/> },
-    { url: "form-pickers", component: <Pickers/> },
-    { url: "form-validation", component: <FormValidation/> },
-
-    ///Table
-	  { url: 'table-filtering', component: <FilteringTable/> },
-    { url: 'table-sorting', component: <SortingTable/> },
-    { url: "table-datatable-basic", component: <DataTable/> },
-    { url: "table-bootstrap-basic", component: <BootstrapTable/> },
 
   ];
   let path = window.location.pathname;
