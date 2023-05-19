@@ -8,8 +8,6 @@ import {MenuList} from './Menu';
 import {useScrollPosition} from "@n8tb1t/use-scroll-position";
 import { ThemeContext } from "../../../context/ThemeContext";
 
-import profile from "../../../images/user.jpg";
-
 
 const reducer = (previousState, updatedState) => ({
   ...previousState,

@@ -43,15 +43,12 @@ import PostDetails from "./components/AppsMenu/AppProfile/PostDetails";
 import ProductGrid from "./components/AppsMenu/Shop/ProductGrid/ProductGrid";
 import ProductList from "./components/AppsMenu/Shop/ProductList/ProductList";
 import ProductDetail from "./components/AppsMenu/Shop/ProductGrid/ProductDetail";
-import Checkout from "./components/AppsMenu/Shop/Checkout/Checkout";
-import Invoice from "./components/AppsMenu/Shop/Invoice/Invoice";
 import ProductOrder from "./components/AppsMenu/Shop/ProductOrder";
 import Customers from "./components/AppsMenu/Shop/Customers/Customers";
 
 ///Charts
 import SparklineChart from "./components/charts/Sparkline";
 import ChartJs from "./components/charts/Chartjs";
-//import Chartist from "./components/charts/chartist";
 import RechartJs from "./components/charts/rechart";
 import ApexChart from "./components/charts/apexcharts";
 
@@ -75,8 +72,6 @@ import UiTypography from "./components/bootstrap/Typography";
 
 ///Plugins
 import Select2 from "./components/PluginsMenu/Select2/Select2";
-//import Nestable from "./components/PluginsMenu/Nestable/Nestable";
-//import MainNouiSlider from "./components/PluginsMenu/NouiSlider/MainNouiSlider";
 import MainSweetAlert from "./components/PluginsMenu/SweetAlert/SweetAlert";
 import Toastr from "./components/PluginsMenu/Toastr/Toastr";
 import JqvMap from "./components/PluginsMenu/JqvMap/JqvMap";
@@ -144,7 +139,6 @@ const Markup = () => {
     ///Chart
     { url: "chart-sparkline", component: <SparklineChart/> },
     { url: "chart-chartjs", component: <ChartJs/> },
-    //{url: "chart-chartist", component: Chartist },
     { url: "chart-apexchart", component: <ApexChart/> },
     { url: "chart-rechart", component: <RechartJs/> },
 
@@ -168,17 +162,10 @@ const Markup = () => {
 	
     ///Plugin
     { url: "uc-select2", component: <Select2 /> },
-    //{url: "uc-nestable", component: Nestable },
-    //{url: "uc-noui-slider", component: MainNouiSlider },
     { url: "uc-sweetalert", component: <MainSweetAlert/> },
     { url: "uc-toastr", component: <Toastr/> },
     { url: "map-jqvmap", component: <JqvMap/> },
     { url: "uc-lightgallery", component: <Lightgallery/> },
-
-	//Redux
-	//{url:"todo",component: <Todo/> },
-	//{url:"redux-form",component: ReduxForm },
-  //{url:"redux-wizard",component: WizardForm },
 	
     //Widget
     { url:"widget-basic",component:<Widget/>},
@@ -188,8 +175,6 @@ const Markup = () => {
     { url: "ecom-product-list", component: <ProductList/> },
     { url: "ecom-product-detail", component: <ProductDetail/> },
     { url: "ecom-product-order", component: <ProductOrder/> },
-    { url: "ecom-checkout", component: <Checkout/> },
-    { url: "ecom-invoice", component: <Invoice/> },
     { url: "ecom-customers", component: <Customers/> },
 
     ///Form
@@ -204,17 +189,6 @@ const Markup = () => {
     { url: 'table-sorting', component: <SortingTable/> },
     { url: "table-datatable-basic", component: <DataTable/> },
     { url: "table-bootstrap-basic", component: <BootstrapTable/> },
-
-    //Pages
-    //{ url:"page-register",component: Registration },
-    //{ url:"page-lock-screen",component: LockScreen },
-    //{ url:"page-login",component: Login },
-    //{ url:"page-forgot-password",component: ForgotPassword },
-    //{ url:"page-error-400",component:Error400 },
-    //{ url:"page-error-403",component:Error403 },
-    //{ url:"page-error-404",component:Error404 },
-    //{ url:"page-error-500",component:Error500 },
-    //{ url:"page-error-503",component:Error503 },
 
   ];
   let path = window.location.pathname;

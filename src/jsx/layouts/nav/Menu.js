@@ -84,10 +84,6 @@ export const MenuList = [
                 hasMenu : true,
                 content: [
                     {
-                        title: 'Users',
-                        to: 'ecom-customers',
-                    },
-                    {
                         title: 'Posts',
                         to: 'ecom-product-list',
                     },
